@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="itemTextSize">20sp</dimen>
+    <dimen name="my_15">15dp</dimen>
+    <dimen name="mx_15">15dp</dimen>
+    <dimen name="quantityTextSize">30sp</dimen>
+    <dimen name="buttonCornerRadius">30dp</dimen>
+    <dimen name="mx_40">120dp</dimen>
+    <dimen name="p_15">15dp</dimen>
+
+    <dimen name="my_0">0dp</dimen>
+    <dimen name="mx_0">0dp</dimen>
+
+
+</resources>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Shopping List</string>
+    <string name="minus"><![CDATA[<]]></string>
+    <string name="plus"><![CDATA[>]]></string>
+    <string name="itemQuantityDefault">0</string>
+    <string name="CancelButton">Cancel</string>
+    <string name="SaveButton">Save</string>
 </resources>
