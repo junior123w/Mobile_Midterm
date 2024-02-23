@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Create Your Shopping List"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Shopping list"
+        android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.971"
@@ -49,6 +52,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="76dp"
         android:text="QTY"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/shoppingLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/mx_40"
-                android:text="computer parts"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 android:visibility="visible" />
 
@@ -97,9 +101,11 @@
                 android:id="@+id/minusItemOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -109,15 +115,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="@string/itemQuantityDefault"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -132,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/mx_40"
-                android:text="computer parts"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 android:visibility="visible" />
 
@@ -140,9 +149,11 @@
                 android:id="@+id/minusItemTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -152,15 +163,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="@string/itemQuantityDefault"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -175,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/mx_40"
-                android:text="computer parts"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 android:visibility="visible" />
 
@@ -183,9 +197,11 @@
                 android:id="@+id/minusItemThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -195,15 +211,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="@string/itemQuantityDefault"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -218,7 +237,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginEnd="@dimen/mx_40"
-                android:text="computer parts"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 android:visibility="visible" />
 
@@ -226,7 +245,9 @@
                 android:id="@+id/minusItemFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -236,13 +257,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="0"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -253,9 +277,11 @@
         android:layout_width="124dp"
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
+        android:backgroundTint="@color/extraButtonColor"
         android:paddingStart="@dimen/p_15"
         android:paddingEnd="@dimen/p_15"
         android:text="@string/CancelButton"
+        android:textColor="@color/black"
         android:textSize="@dimen/itemTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/shoppingLayout"
@@ -270,9 +296,11 @@
         android:layout_width="114dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="@color/extraButtonColor"
         android:paddingStart="@dimen/p_15"
         android:paddingEnd="@dimen/p_15"
         android:text="@string/SaveButton"
+        android:textColor="@color/black"
         android:textSize="@dimen/itemTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/shoppingLayout"

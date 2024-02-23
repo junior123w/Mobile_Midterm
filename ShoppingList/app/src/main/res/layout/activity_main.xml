@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -12,10 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:hint="Enter the name of shopping list"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoppingTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/shoppingTitle"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/shoppingTitle"
@@ -36,10 +39,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Shopping list"
+        android:textColor="@color/black"
         android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemNameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/itemNameInput"
+        app:layout_constraintVertical_bias="0.017" />
 
     <TextView
         android:id="@+id/qtyTextView"
@@ -48,6 +55,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="76dp"
         android:text="QTY"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.987"
@@ -85,13 +93,16 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/mx_40"
                 android:text=""
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize" />
 
             <Button
                 android:id="@+id/minusItemOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -101,13 +112,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="@string/itemQuantityDefault"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemOne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -122,13 +136,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/mx_40"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize" />
 
             <Button
                 android:id="@+id/minusItemTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -138,13 +155,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="@string/itemQuantityDefault"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -159,13 +179,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/mx_40"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize" />
 
             <Button
                 android:id="@+id/minusItemThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -175,13 +198,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="@string/itemQuantityDefault"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -197,13 +223,16 @@
                 android:layout_height="match_parent"
 
                 android:layout_marginEnd="@dimen/mx_40"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize" />
 
             <Button
                 android:id="@+id/minusItemFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/minus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
 
@@ -213,13 +242,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/mx_15"
                 android:text="0"
+                android:textColor="@color/black"
                 android:textSize="@dimen/quantityTextSize" />
 
             <Button
                 android:id="@+id/plusItemFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
                 android:text="@string/plus"
+                android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
@@ -229,11 +261,13 @@
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/extraButtonColor"
         android:paddingStart="@dimen/p_15"
         android:paddingTop="@dimen/p_15"
         android:paddingEnd="@dimen/p_15"
         android:paddingBottom="@dimen/p_15"
         android:text="@string/CancelButton"
+        android:textColor="@color/black"
         android:textSize="@dimen/itemTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -246,11 +280,13 @@
         android:id="@+id/saveButton"
         android:layout_width="101dp"
         android:layout_height="59dp"
+        android:backgroundTint="@color/extraButtonColor"
         android:paddingStart="@dimen/p_15"
         android:paddingTop="@dimen/p_15"
         android:paddingEnd="@dimen/p_15"
         android:paddingBottom="@dimen/p_15"
         android:text="@string/SaveButton"
+        android:textColor="@color/black"
         android:textSize="@dimen/itemTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
