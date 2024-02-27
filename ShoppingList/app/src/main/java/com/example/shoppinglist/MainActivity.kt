@@ -2,6 +2,7 @@
 
     import androidx.appcompat.app.AppCompatActivity
     import android.os.Bundle
+    import android.util.Log
     import android.view.KeyEvent
     import android.widget.Button
     import android.widget.TableLayout
@@ -33,6 +34,7 @@
             itemInput = findViewById(R.id.itemNameInput)
             tableLayout = findViewById(R.id.shoppingLayout)
             cancelButton = findViewById(R.id.cancelButton)
+            saveButton=findViewById(R.id.saveButton)
 
             itemName.add(findViewById(R.id.itemOne))
             itemName.add(findViewById(R.id.itemTwo))
@@ -56,6 +58,41 @@
 
 
 
+            itemInput.setOnKeyListener { _, keyCode, event ->
+                if (event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
+                    val enteredText = itemInput.text.toString().trim()
+                    if (enteredText.length > 32) {
+                        //truncating the text to 50 characters
+                        itemInput.setText(enteredText.take(32))
+                    } else {
+                        updateitemName(enteredText)
+                        resetQuantities()
+                    }
+                    return@setOnKeyListener true
+                }
+                return@setOnKeyListener false
+            }
+
+
+            saveButton.setOnClickListener {
+                // Log item names and quantities
+                for (i in itemName.indices) {
+                    val itemNameText = itemName[i].text.toString()
+                    val quantityText = quantity[i].text.toString()
+                    // Log the data to Logcat
+                    Log.d("SaveButton", "Item: $itemNameText, Quantity: $quantityText")
+                }
+            }
+
+            userInputListName.setOnKeyListener { _, keyCode, event ->
+                if (event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
+                    val enteredText = userInputListName.text.toString()
+                    listNameTextView.text =
+                        enteredText.takeIf { it.isNotEmpty() } ?: "Shopping List"
+                    return@setOnKeyListener true
+                }
+                return@setOnKeyListener false
+            }
 
         }
 
