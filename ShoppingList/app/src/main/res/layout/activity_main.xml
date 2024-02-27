@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/itemNameInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/listNameInput"
+        android:layout_width="396dp"
+        android:layout_height="55dp"
         android:layout_marginTop="36dp"
         android:hint="Enter the name of shopping list"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,43 +44,47 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemNameInput"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintTop_toBottomOf="@+id/listNameInput"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/qtyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="76dp"
-        android:text="QTY"
+        android:text="@string/qtyText"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/shoppingLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.987"
-        app:layout_constraintStart_toEndOf="@+id/listNameInput"
-        app:layout_constraintTop_toBottomOf="@+id/listNameTextView" />
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toEndOf="@+id/itemNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/listNameTextView"
+        app:layout_constraintVertical_bias="0.333" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/listNameInput"
+        android:id="@+id/itemNameInput"
         android:layout_width="199dp"
         android:layout_height="61dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:hint="Enter your item name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listNameTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/listNameTextView"
+        app:layout_constraintVertical_bias="0.045" />
 
     <TableLayout
         android:id="@+id/shoppingLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listNameInput">
+        app:layout_constraintTop_toBottomOf="@+id/itemNameInput">
 
         <TableRow
             android:layout_width="match_parent"
@@ -92,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/mx_40"
-                android:text=""
+
                 android:textColor="@color/black"
                 android:textSize="@dimen/itemTextSize" />
 
@@ -278,8 +282,8 @@
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="101dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/extraButtonColor"
         android:paddingStart="@dimen/p_15"
         android:paddingTop="@dimen/p_15"

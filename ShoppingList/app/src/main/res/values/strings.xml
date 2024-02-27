@@ -5,4 +5,5 @@
     <string name="itemQuantityDefault">0</string>
     <string name="CancelButton">Cancel</string>
     <string name="SaveButton">Save</string>
+    <string name="qtyText">QTY</string>
 </resources>
