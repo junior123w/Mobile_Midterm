@@ -16,8 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintTop_toBottomOf="@+id/listNameTextView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/listNameTextView"
@@ -26,38 +26,12 @@
         android:text="Shopping list"
         android:textColor="@color/black"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
-
-    <TextView
-        android:id="@+id/qtyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="QTY"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/shoppingLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listNameInput" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/itemNameInput"
-        android:layout_width="241dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="4dp"
-        android:hint="Enter your item name"
-        app:layout_constraintBottom_toTopOf="@+id/shoppingLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listNameInput"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TableLayout
         android:id="@+id/shoppingLayout"
@@ -66,21 +40,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.691"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listNameInput">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginVertical="2dp">
 
-            <TextView
-                android:id="@+id/itemOne"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/mx_40"
-                android:textColor="@color/black"
-                android:textSize="@dimen/itemTextSize"
-                android:visibility="visible" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemNameInputOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/hint" />
 
             <Button
                 android:id="@+id/minusItemOne"
@@ -121,14 +94,12 @@
             android:layout_height="match_parent"
             android:layout_marginVertical="2dp">
 
-            <TextView
-                android:id="@+id/itemTwo"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemNameInputTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/mx_40"
-                android:textColor="@color/black"
-                android:textSize="@dimen/itemTextSize"
-                android:visibility="visible" />
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/hint" />
 
             <Button
                 android:id="@+id/minusItemTwo"
@@ -169,14 +140,12 @@
             android:layout_height="match_parent"
             android:layout_marginVertical="2dp">
 
-            <TextView
-                android:id="@+id/itemThree"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemNameInputThree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/mx_40"
-                android:textColor="@color/black"
-                android:textSize="@dimen/itemTextSize"
-                android:visibility="visible" />
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/hint" />
 
             <Button
                 android:id="@+id/minusItemThree"
@@ -216,15 +185,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/itemFour"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemNameInputFour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginEnd="@dimen/mx_40"
-                android:textColor="@color/black"
-                android:textSize="@dimen/itemTextSize"
-                android:visibility="visible" />
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/hint" />
 
             <Button
                 android:id="@+id/minusItemFour"
@@ -255,12 +221,54 @@
                 android:textSize="@dimen/itemTextSize"
                 app:cornerRadius="@dimen/buttonCornerRadius" />
         </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/itemNameInputFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/hint" />
+
+            <Button
+                android:id="@+id/minusItemFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
+                android:text="@string/minus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/itemTextSize"
+                app:cornerRadius="@dimen/buttonCornerRadius" />
+
+            <TextView
+                android:id="@+id/quantityItemFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/mx_15"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/quantityTextSize" />
+
+            <Button
+                android:id="@+id/plusItemFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttonColor"
+                android:text="@string/plus"
+                android:textColor="@color/black"
+                android:textSize="@dimen/itemTextSize"
+                app:cornerRadius="@dimen/buttonCornerRadius" />
+        </TableRow>
     </TableLayout>
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="124dp"
         android:layout_height="45dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="@color/extraButtonColor"
         android:paddingStart="@dimen/p_15"
         android:paddingEnd="@dimen/p_15"
@@ -272,8 +280,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/saveButton" />
 
     <Button
         android:id="@+id/saveButton"
@@ -290,7 +297,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537" />
+        app:layout_constraintTop_toBottomOf="@+id/listNameTextView"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

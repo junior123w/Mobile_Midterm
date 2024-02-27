@@ -6,4 +6,6 @@
     <string name="CancelButton">Cancel</string>
     <string name="SaveButton">Save</string>
     <string name="qtyText">QTY</string>
+    <string name="hint">Enter your item name</string>
+    <string name="listNameHint">Enter the name of your shopping list\n</string>
 </resources>

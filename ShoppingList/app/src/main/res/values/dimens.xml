@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="itemTextSize">20sp</dimen>
-    <dimen name="my_15">15dp</dimen>
+    <dimen name="my_15">10dp</dimen>
     <dimen name="mx_15">15dp</dimen>
     <dimen name="quantityTextSize">30sp</dimen>
     <dimen name="buttonCornerRadius">30dp</dimen>
